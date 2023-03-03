@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor | Time tracking dashboard](https://your-solution-url.com)
-- Live Site URL: [Time tracking dashboard](https://sasanqc.github.io/time-tracking-dashboard/)
+- Live Site URL: [Time tracking dashboard](https://rococo-swan-fc47ba.netlify.app/)
 
 ## My process
 
