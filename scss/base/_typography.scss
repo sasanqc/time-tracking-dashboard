@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+.heading-xl {
+  font-weight: 300;
+  font-size: $fs-heading-xl;
+  line-height: $lh-heading-xl;
+  @include respond(phone) {
+    font-size: 4rem;
+    line-height: 4.75rem;
+  }
+}
+
+.heading-l {
+  font-weight: 300;
+  font-size: $fs-heading-l;
+  line-height: $lh-heading-l;
+  @include respond(phone) {
+    font-size: 3rem;
+    line-height: 3.55rem;
+  }
+}
+
+.body {
+  font-weight: 400;
+  font-size: $fs-body;
+  line-height: $lh-body;
+  @include respond(phone) {
+    font-size: 2.25rem;
+    line-height: 2.66rem;
+  }
+}
+.body-b {
+  font-weight: 500;
+  font-size: $fs-body;
+  line-height: $lh-body;
+  @include respond(phone) {
+    font-size: 2.25rem;
+    line-height: 2.66rem;
+  }
+}
+.body-s {
+  font-weight: 400;
+  font-size: $fs-body-s;
+  line-height: $lh-body-s;
+  @include respond(phone) {
+    font-size: 1.87rem;
+    line-height: 2.25rem;
+  }
+}

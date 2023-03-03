@@ -1,0 +1,79 @@
+@use "../abstracts/" as *;
+.activity {
+  max-width: 25.5rem;
+
+  position: relative;
+  border-radius: $main-border-radius;
+  overflow: hidden;
+
+  &__icon {
+    position: absolute;
+    right: 1.8rem;
+    top: -1rem;
+  }
+
+  &__details {
+    background-color: $clr-neutral-dark-blue;
+    border-radius: $main-border-radius;
+    position: relative;
+    top: 4.5rem;
+    padding: 3rem;
+    transition: background-color 0.25s;
+    &:hover {
+      background-color: $clr-primary-hover-blue;
+      cursor: pointer;
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__hours {
+    margin-bottom: 0.8rem;
+  }
+
+  &__last {
+    margin-bottom: 3.7rem;
+    color: $clr-neutral-pale-blue;
+  }
+
+  &--work {
+    background-color: $clr-primary-light-red-work;
+  }
+  &--play {
+    background-color: $clr-primary-soft-blue;
+  }
+  &--study {
+    background-color: $clr-primary-light-red-study;
+  }
+  &--exercise {
+    background-color: $clr-primary-lime-green;
+  }
+  &--social {
+    background-color: $clr-primary-violet;
+  }
+  &--self-care {
+    background-color: $clr-primary-soft-orange;
+  }
+
+  @include respond(phone) {
+    max-width: 100%;
+    &__text-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+    &__header {
+      margin-bottom: 1rem;
+    }
+    &__last {
+      margin-bottom: 0;
+    }
+  }
+}

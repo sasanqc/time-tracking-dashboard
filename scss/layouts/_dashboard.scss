@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  :first-child {
+    grid-row: 1/3;
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    :first-child {
+      grid-row: 1;
+    }
+  }
+}
